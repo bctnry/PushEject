@@ -5,8 +5,8 @@ The nhentai downloader revisited.
 I once, or twice should I say, have written scripts for downloading doujins
 from nhentai for the simple reason that I hate manually right-clicking on
 every pics. First time I've used PHP, the second time bash with curl. The
-first one have lost in an OS re-installation; I still have the latter one
-sitting in my hard drive, but that one was rather primitive. Thought it's
+first one have been lost in an OS re-installation; I still have the latter
+one sitting in my hard drive, but that one was rather primitive. Thought it's
 time to rewrite.
 
 As for the name, the script itself didn't have such a name in the beginning;
@@ -15,7 +15,8 @@ I was listening to Boom Boom Satellite's Push Eject.
 
 ## Does writing code actually help you relax?
 That kinda depends. It of course wouldn't be as relaxing as coding in a top-tier
-mansion if you live in a capsule hotel.
+mansion with your girlfriend hugging you from the back if you live in a capsule
+hotel.
 
 ## How long are you gonna stay in Shenzhen?
 At least till 7th September. To be fair, I hate Shenzhen. I hate it with a
@@ -28,4 +29,11 @@ It's bad in a way just like Python: it's good sometimes, but in all of other
 times it's literal shit.
 
 ## Are you gonna support Windows/Linux/FreeBSD/OpenBSD/OpenIndiana/etc...
-That actually depends on what language I would use.
+That actually depends on what language I would use. I decided to use python
+because till now I have been working with python for three whole months,
+(unfortunately) making python the language I'm most familiar with.
+
+## Any recommendation on doujins?
+Haha. Even if you know I'm not gonna recommend any. <del>Sayori's and kikurage's
+are good though.</del>
+
