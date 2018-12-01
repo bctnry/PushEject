@@ -37,3 +37,6 @@ because till now I have been working with python for three whole months,
 Haha. Even if you know I'm not gonna recommend any. <del>Sayori's and kikurage's
 are good though.</del>
 
+## About the GitLab/GitHub issue
+This repo is hosted on GitLab & GitHub at the same time. Issues opened from
+both sites are accepted and will be solved.
