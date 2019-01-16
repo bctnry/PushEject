@@ -1,6 +1,8 @@
 # PushEject
 The nhentai downloader revisited.
 
+GitHub repository: [https://github.com/bctnry/PushEject](https://github.com/bctnry/PushEject)
+
 ## The history
 I once, or twice should I say, have written scripts for downloading doujins
 from nhentai for the simple reason that I hate manually right-clicking on
