@@ -19,6 +19,8 @@ mansion with your girlfriend hugging you from the back if you live in a capsule
 hotel.
 
 ## How long are you gonna stay in Shenzhen?
+**UPDATE 2019.1.16**: I'm in Shenzhen now. Again. This time maybe a *lot* longer.
+
 At least till 7th September. To be fair, I hate Shenzhen. I hate it with a
 passion. Shenzhen is a city built in just 30 years, and it's there just
 because it's next to Hong Kong, which (in my opinion) makes it lack of
