@@ -25,6 +25,13 @@ REGEX_FILE_NAME = re.compile('.*/(.*)$')
 REGEX_GALLERY_NAME_BIG = re.compile('<h1>(.*)</h1>')
 REGEX_NUM_PAGES = re.compile('<div>([0-9]*) pages</div>')
 
+# this is just to escape some of the special characters because currently
+# pusheject will choke on some tags. specifically Fate tags (Fate/stay
+# night, Fate/Grand Order, etc.), for they have slashes.
+def directory_name_escape(dir_name):
+    return dir_name.replace('/', ' ')
+
+
 def download_file(result_dir, url):
     global CONNECTION, RESULT_DIR, REGEX_FILE_NAME
     with open("%s/%s" % (result_dir, REGEX_FILE_NAME.findall(url)[0]), mode='wb') as opened:
@@ -61,7 +68,7 @@ def get_gallery(gallery_id):
     print('Gallery info retrieved:')
     print('Name:\t\t%s\n#Pages:\t\t%s' % (gallery_info['name'], gallery_info['num_pages']))
     gallery_dir = "%s%s" % (RESULT_DIR, gallery_id)
-    gallery_result_dir = "%s%s/%s" % (RESULT_DIR, gallery_id, gallery_info['name'])
+    gallery_result_dir = "%s%s/%s" % (RESULT_DIR, gallery_id, directory_name_escape(gallery_info['name']))
     print('Your file will be saved at %s.\nStart downloading...' % gallery_result_dir, flush=True)
     if os.path.exists(gallery_dir):
         shutil.rmtree(gallery_dir)
@@ -93,7 +100,8 @@ def finalization():
 
 def main():
     initialization()
-    get_gallery(sys.argv[1])
+    for x in sys.argv[1:]:
+        get_gallery(x)
     finalization()
 
 main()

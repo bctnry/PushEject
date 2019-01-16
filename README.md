@@ -10,7 +10,7 @@ one sitting in my hard drive, but that one was rather primitive. Thought it's
 time to rewrite.
 
 As for the name, the script itself didn't have such a name in the beginning;
-I thought of it on my way back to the capsule hotel I'm currently living.
+I thought of it on my way back to the capsule hotel I rented back in Aug. 2018.
 I was listening to Boom Boom Satellite's Push Eject.
 
 ## Does writing code actually help you relax?
