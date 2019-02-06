@@ -68,11 +68,10 @@ def get_gallery(gallery_id):
     print('Gallery info retrieved:')
     print('Name:\t\t%s\n#Pages:\t\t%s' % (gallery_info['name'], gallery_info['num_pages']))
     gallery_dir = "%s%s" % (RESULT_DIR, gallery_id)
-    gallery_result_dir = "%s%s/%s" % (RESULT_DIR, gallery_id, directory_name_escape(gallery_info['name']))
+    gallery_result_dir = "%s%s" % (RESULT_DIR, directory_name_escape(gallery_info['name']))
     print('Your file will be saved at %s.\nStart downloading...' % gallery_result_dir, flush=True)
-    if os.path.exists(gallery_dir):
-        shutil.rmtree(gallery_dir)
-    os.mkdir(gallery_dir)
+    if os.path.exists(gallery_result_dir):
+        shutil.rmtree(gallery_result_dir)
     os.mkdir(gallery_result_dir)
     for i in range(1, gallery_info['num_pages'] + 1):
         print('Downloading %s...' % i, flush=True)
