@@ -15,6 +15,8 @@ import html.parser
 import os
 import shutil
 import sys
+import random
+import time
 
 CONNECTION = None
 RESULT_DIR = './result/'
@@ -74,6 +76,8 @@ def get_gallery(gallery_id):
         shutil.rmtree(gallery_result_dir)
     os.mkdir(gallery_result_dir)
     for i in range(1, gallery_info['num_pages'] + 1):
+        print('Pausing for a bit...')
+        time.sleep(random.randint(2, 8))
         print('Downloading %s...' % i, flush=True)
         CONNECTION.request('GET', '/g/%s/%s/' % (gallery_id, i))
         resp = CONNECTION.getresponse()
